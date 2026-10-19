@@ -150,3 +150,64 @@ lead vocals, spoken word, choir, vocal chops, aggressive percussion, dramatic or
 用户说：“把第一遍副歌改得抓耳，其他不动。”
 
 行为：只交付替换副歌；如果用户明确要三栏整合版，再返回三栏，其他歌词原样保留。不自动把第二遍副歌一起换掉，可说明目前只更新指定位置。
+
+## 双声线中英互动：万圣节数字怪谈
+
+下例专门展示 **Style 中定义角色，Lyrics 中调用角色编号**；英文对白尽量用短句节奏唱。角色标签尚未经本项目实际 Suno v6 音频验证，不能保证准确对应两个真实音色。
+
+Style
+
+```text
+Halloween Mandarin C-pop fused with denpa-pop, 152 BPM, catchy eerie minor-key dance groove, detuned music box, chiptune arpeggios, bouncy bass, crisp drums. Two distinct female characters. Voice 1: clear youthful mezzo-soprano, native Mandarin lead singing, expressive melodic leaps and soft head voice. Voice 2: higher, lighter mischievous female, crisp English rhythmic spoken-sung replies. Voice 1 leads Mandarin verses and choruses; Voice 2 answers only in tagged English phrases; both join only where tagged. Immediate chorus hook, sudden stops, haunted half-time bridge, strong final chorus, upfront vocals and light reverb.
+```
+
+Lyrics
+
+```text
+[Chorus]
+[Voice 1]
+别回头，别回头
+屏幕里的我在招手
+我还没有写下回答
+对话框却自己开口
+
+[Post-Chorus]
+[Call and Response]
+[Voice 1]
+Knock, knock, knock!
+[Voice 2]
+Wasn't me!
+[Voice 1]
+Click, click, click!
+[Voice 2]
+Who's typing?
+
+[Verse 1]
+[Voice 1]
+午夜有人问我
+能讲个鬼故事吗
+我刚敲下第一个字
+门外忽然响三下
+
+[Bridge]
+[Voice 1]
+这故事还没讲完
+屏幕却先显示结局
+
+[Final Chorus]
+[Both]
+别回头，别回头
+下一句轮到你开口
+
+[Outro]
+[Voice 2]
+Your turn!
+```
+
+Exclude
+
+```text
+unclear Mandarin diction, slurred syllables, unintelligible English dialogue, extreme baby voice, chipmunk pitch, robotic speech, heavy reverb, muddy lead vocals, long instrumental intro
+```
+
+创作时不能强制给用户加入第二声线或英文；仅在用户要角色对唱、明确接受英文短句时采用这套结构。如果试听发现 Voice 2 不出现，先在更长且独立的完整段落中测试它；若依然串位，参见 [修复指南](repairs.md)。
