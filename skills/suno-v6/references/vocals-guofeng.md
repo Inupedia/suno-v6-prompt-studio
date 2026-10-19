@@ -22,7 +22,7 @@
 Two distinct female vocal characters.
 Voice 1: youthful clear mezzo-soprano, expressive native Mandarin pop singing, warm tone, melodic legato and light head-voice lifts.
 Voice 2: distinctly higher and lighter bright female voice, mischievous crisp English spoken-sung responses, short rhythmic phrases.
-Voice 1 leads Mandarin verses and choruses; Voice 2 handles tagged English replies. Both harmonize only in tagged sections.
+Voice 1 leads Mandarin verses and choruses plus brief English cue lines; Voice 2 handles tagged English replies. Both harmonize on short shared English phrases only when tagged.
 ```
 
 **Lyrics 再用相同编号调用：**
@@ -45,8 +45,12 @@ Click, click, click!
 Who's typing?
 
 [Final Chorus]
-[Both]
+[Voice 1]
 别回头！别回头！
+
+[Post-Chorus]
+[Both]
+Don't look back!
 ```
 
 - **同一首歌编号保持不变**：不要在某段突然把 Voice 1 写成小助手，或让 Voice 2 接管主唱而不交代。
@@ -55,7 +59,7 @@ Who's typing?
 - **唱法另标注**：`[Rhythmic chant]`、`[Soft spoken]`、`[Harmony]` 只说明怎么演，不是 Voice 身份；简短且仅放需要的段落。
 - **英文念白只在用户愿意时使用**：用户反馈中文唱歌正常、中文口语含糊，可尝试“中文唱 + 英文 spoken-sung 短句”；不要擅自把所有中文改成英文。
 - **可选格式 A/B**：一些创作者使用 `[Verse 1: Voice 1]` 或 `[Verse 1 - Voice 1]`；与独立 `[Voice 1]` 均需试听对照，不要宣称哪个是官方标准。
-- **合唱不等于身份锁定**：`[Both]`、`[Duet]`、和声说明可能被模型忽略；先让主唱建立身份，第二声线再回应。
+- **合唱不等于身份锁定**：`[Both]`、`[Duet]`、和声说明可能被模型忽略；先让主唱建立身份，第二声线再回应。若 Style 将 Voice 2 定义成只唱英文，不应在 `[Both]` 段直接放整段中文；改成 Voice 1 独唱中文、Both 合唱双方能唱的英文短 Hook，或明确让 Voice 2 同样会唱中文。
 - **篇幅控制**：实际 Style 若有长度限制，先保留角色差异、语言分工和主曲风，删掉重复形容词，不保证仅因标签就能准确切换。
 
 首次测试先用两段声音对比明显的短样例，检查是否真正出现两种声线、语言是否正确、角色是否串位。连续失败时减少切换频率；已有满意成品可尝试局部编辑或分轨重录，不把整首重生成当作唯一方案。参见 [试听后修正](repairs.md) 和 [双声线示例](examples.md#双声线中英互动万圣节数字怪谈)。
