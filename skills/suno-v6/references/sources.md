@@ -45,6 +45,13 @@
 
 原手册中以下内容不作为 v6 硬规则：固定风格影响百分比、多样性数值、Max Mode 费用翻倍、所有标签必定识别、最多五类标签、拼音总是最有效、suona 基本无效、戏腔必须女声假声、国风必须三件套。保留音乐意图，具体响应以实际试听为准。
 
+## 双声线标签的证据边界（2026-10-19）
+
+- **官方已说明**：[Introducing v6](https://about.suno.com/blog/introducing-v6) 与 [What's new in v6?](https://help.suno.com/en/articles/13924801) 提及更强的音乐语言理解、局部自然语言编辑及 Replace Section；**未提供** `[Voice 1]`、`[Voice 2]`、`[Both]` 必定正确指派不同音色的正式解析规范。
+- **社区可观察写法**：公开的 [v6 双人对白歌曲示例](https://suno.com/song/5945c3a2-41ea-4040-9cb2-aa11e4249af1) 使用 `Voice 1:` / `Voice 2:` 等标记；[2026-09-26 对唱讨论](https://www.reddit.com/r/SunoAI/comments/1wqhsbu/duets_alternate_voices_are_hard/) 有创作者反馈采用歌词分段标记，但也报告串位问题。这些不是本仓库的复现实验。
+- **本技能的工作假设**：Style 声线定义 + Lyrics 独立 `[Voice 1]` / `[Voice 2]` / `[Both]` 是更易维护和试听的组织方式；采用短句英语节奏唱代替失真的中文念白，是针对用户需求的备选策略，**不代表**普通话说话或双声线能力有官方质量保证。
+- 来源性质：官方功能称 `official`；未经试听的角色标签方案称 `working-hypothesis`，不得标作 `community-tested` 或声称 `100%` 成功。未来如果获得同一 Suno 版本下的输入、输出与试听记录，再更新判断。
+
 ## 原始文件指纹
 
 用于确认本次整理依据，SHA-256：

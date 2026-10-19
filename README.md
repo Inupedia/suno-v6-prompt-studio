@@ -56,6 +56,7 @@ $suno-v6 写一首雨夜告别的中文歌，克制男声，钢琴为主，副�
 | 保留已有歌词 | 以下歌词一个字别改，只加段落标签，配温暖男声的 Style 和 Exclude。 |
 | 国风点缀戏腔 | 渡口送别，古筝与箫，主歌自然演唱，只在末段副歌加一点戏腔。 |
 | 双语歌曲 | 中文主歌、英文短句副歌，深夜城市 R&B，避免在一句中频繁切换语言。 |
+| 双声线角色对唱 | Style 分别定义 Voice 1 / Voice 2，Lyrics 按段落分配，中文主唱与英文短句互动。 |
 | 纯音乐 | 清晨咖啡馆，木质温暖的 bossa nova，不要人声与哼唱，给器乐结构。 |
 | 试听后修正 | 人声太远、副歌太平，保留歌词，修改 Style 和 Exclude。 |
 | 局部改词 | 只重写第一遍副歌，让核心句更好记，其他部分保持原样。 |
@@ -93,6 +94,40 @@ screaming, aggressive EDM drops, heavy vocal reverb, robotic vocal processing
 ```
 
 这里展示一个主歌与副歌片段。完整情歌、国风与纯音乐示例见 [examples.md](skills/suno-v6/references/examples.md)。如果只要某一栏或一句改词指令，技能会按请求缩小输出范围。
+
+## 双声线：定义音色，再分配演唱
+
+想让少女主唱和俏皮的第二个角色轮流唱，不建议只在 Lyrics 写 `[Q-voice]`。可以试用成对的角色标签：
+
+**Style** 中写角色音色和语言职责：
+
+```text
+Voice 1: youthful clear female mezzo-soprano, expressive native Mandarin pop singing.
+Voice 2: lighter higher bright female voice, crisp English rhythmic spoken-sung responses.
+Voice 1 leads Chinese verses and choruses; Voice 2 handles English call-and-response.
+```
+
+**Lyrics** 里复用相同编号：
+
+```text
+[Chorus]
+[Voice 1]
+别回头！别回头！
+屏幕里的我在招手
+
+[Post-Chorus]
+[Call and Response]
+[Voice 1]
+Knock, knock, knock!
+[Voice 2]
+Wasn't me!
+
+[Final Chorus]
+[Both]
+别回头！别回头！
+```
+
+`[Voice 1]` / `[Voice 2]` / `[Both]` 是**待试听的社区提示词习惯**，不是 Suno 已公开保证的精确声轨分配语法。音色若混淆，减少切换次数并先试听短段；中文念白如果失真，在用户同意下可试英文短句节奏唱，保留效果良好的中文旋律。完整规则见 [人声与国风](skills/suno-v6/references/vocals-guofeng.md#v6-双声线style-定义lyrics-调用工作假设)，也有 [可复制的三栏示例](skills/suno-v6/references/examples.md#双声线中英互动万圣节数字怪谈)。
 
 ## 创作方式
 
