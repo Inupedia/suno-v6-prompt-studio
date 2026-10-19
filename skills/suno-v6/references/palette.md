@@ -345,4 +345,3 @@
 | 共鸣 | resonance |
 | 表达力 | expression / delivery |
 | 人声样本 | vocal sample |
-

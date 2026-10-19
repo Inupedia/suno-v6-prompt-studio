@@ -143,4 +143,3 @@
 | --- | --- | --- |
 | 颁奖开场 | `Orchestral fanfare, brass section, timpani rolls, majestic and triumphant, red carpet, ceremony` | 典礼片头 |
 | 获奖者上台 | `Upbeat orchestral pop, energetic string staccato, driving rhythm, clapping, optimistic, loopable` | 上台通道 |
-
