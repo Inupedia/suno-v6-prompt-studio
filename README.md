@@ -104,7 +104,7 @@ screaming, aggressive EDM drops, heavy vocal reverb, robotic vocal processing
 ```text
 Voice 1: youthful clear female mezzo-soprano, expressive native Mandarin pop singing.
 Voice 2: lighter higher bright female voice, crisp English rhythmic spoken-sung responses.
-Voice 1 leads Chinese verses and choruses; Voice 2 handles English call-and-response.
+Voice 1 leads Chinese verses and choruses plus brief English cue lines; Voice 2 handles English call-and-response. Both share short English harmony hooks when tagged.
 ```
 
 **Lyrics** 里复用相同编号：
@@ -123,8 +123,12 @@ Knock, knock, knock!
 Wasn't me!
 
 [Final Chorus]
-[Both]
+[Voice 1]
 别回头！别回头！
+
+[Post-Chorus]
+[Both]
+Don't look back!
 ```
 
 `[Voice 1]` / `[Voice 2]` / `[Both]` 是**待试听的社区提示词习惯**，不是 Suno 已公开保证的精确声轨分配语法。音色若混淆，减少切换次数并先试听短段；中文念白如果失真，在用户同意下可试英文短句节奏唱，保留效果良好的中文旋律。完整规则见 [人声与国风](skills/suno-v6/references/vocals-guofeng.md#v6-双声线style-定义lyrics-调用工作假设)，也有 [可复制的三栏示例](skills/suno-v6/references/examples.md#双声线中英互动万圣节数字怪谈)。

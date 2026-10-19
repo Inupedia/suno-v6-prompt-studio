@@ -158,7 +158,7 @@ lead vocals, spoken word, choir, vocal chops, aggressive percussion, dramatic or
 Style
 
 ```text
-Halloween Mandarin C-pop fused with denpa-pop, 152 BPM, catchy eerie minor-key dance groove, detuned music box, chiptune arpeggios, bouncy bass, crisp drums. Two distinct female characters. Voice 1: clear youthful mezzo-soprano, native Mandarin lead singing, expressive melodic leaps and soft head voice. Voice 2: higher, lighter mischievous female, crisp English rhythmic spoken-sung replies. Voice 1 leads Mandarin verses and choruses; Voice 2 answers only in tagged English phrases; both join only where tagged. Immediate chorus hook, sudden stops, haunted half-time bridge, strong final chorus, upfront vocals and light reverb.
+Halloween Mandarin C-pop fused with denpa-pop, 152 BPM, catchy eerie minor-key dance groove, detuned music box, chiptune arpeggios, bouncy bass, crisp drums. Two distinct female characters. Voice 1: clear youthful mezzo-soprano, native Mandarin lead singing, expressive melodic leaps and soft head voice. Voice 2: higher, lighter mischievous female, crisp English rhythmic spoken-sung replies. Voice 1 leads Mandarin verses and choruses plus brief English cue lines; Voice 2 answers only in tagged English phrases; both sing short English harmony hooks where tagged. Immediate chorus hook, sudden stops, haunted half-time bridge, strong final chorus, upfront vocals and light reverb.
 ```
 
 Lyrics
@@ -195,9 +195,13 @@ Who's typing?
 屏幕却先显示结局
 
 [Final Chorus]
-[Both]
+[Voice 1]
 别回头，别回头
 下一句轮到你开口
+
+[Post-Chorus]
+[Both]
+Don't look back!
 
 [Outro]
 [Voice 2]
