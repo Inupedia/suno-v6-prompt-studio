@@ -1,0 +1,4 @@
+interface:
+  display_name: "我的 Suno v6 创作助手"
+  short_description: "融合个人提示词资料，生成可直接粘贴的 Style、Lyrics 与 Exclude"
+  default_prompt: "使用 $suno-v6，把我的主题或已有歌词整理成可直接粘贴到 Suno 的 Style、Lyrics 和 Exclude。"
